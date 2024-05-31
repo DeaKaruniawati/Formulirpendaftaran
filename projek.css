@@ -1,0 +1,106 @@
+*{
+   color: rgb(17, 17, 17);
+}
+body{
+   background-image: url(m.jpg);
+   background-repeat: no-repeat;
+   background-attachment: flex;
+   background-size: 100% 100%;
+
+}
+main{
+    margin: auto;
+    width: 400px;
+    backdrop-filter: blur(5px);
+    height: auto;
+    border-radius: 20px;
+    padding: 50px;
+    border: 2px solid rgb(245, 239, 239);
+
+ }
+ select{
+   padding: 10px 100px;
+   height: 50%;
+ }
+ 
+ option{
+   width: 15px;
+   height: 20%;
+ }
+ h1{
+    padding-top: 20px;
+    margin-bottom: 55px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 
+ input{
+    padding: 10px 100px;
+    height: 15px;
+    width: 31%;
+ }
+ 
+ .btn{
+    margin-top: 50px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(244, 248, 246);
+    border: none;
+    color: rgb(14, 13, 13);
+    margin-left: 200px;
+ 
+ }
+ 
+ .menu-list{
+    margin-top: 20px;
+ }
+ 
+ .menu-list-item{
+    border : 1px solid rgb(131, 131, 131);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+ }
+ 
+ .btn2{
+    border-radius: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    height: 30px;
+    width: 20%;
+ }
+ 
+ .btn3{
+    border-radius: 15px;
+    background-color: black;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    height: 30px;
+    width: 20%;
+    margin-left: 10px;
+ 
+ }
+ 
+ .tombol{
+    display: flex;
+    justify-content: flex-start;
+ }
+ 
+ .btn4{
+    background-color: red;
+    color: white;
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 15px;
+ }
+ 
+ .tombolutama{
+    display: flex;
+    justify-content: space-between;
+ }

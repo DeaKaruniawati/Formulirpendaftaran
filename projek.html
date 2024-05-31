@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajian Kampung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(254, 250, 224);
+
+        }
+
+        .gmbr {
+    background-color: rgb(95, 111, 82);
+    height: 50px;
+    width: 760px;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        main {
+            display: flex;
+        }
+
+        .semua {
+            display: flex;
+            margin-left: 245px;
+            background-color: rgb(169, 179, 136);
+            border-radius: 25px;
+
+        }
+
+        .pict {
+            width: 0px;
+        }
+
+        .deskripsi {
+            max-width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: rgb(169, 179, 136);
+            margin-top: 392px;
+            font-family: sans-serif;
+            color: rgb(80, 41, 5);
+            font-weight: bold;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(185, 148, 112);
+            padding-top: auto;
+        }
+
+        #formPengajian {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: rgb(169, 179, 136);
+            height: 550px;
+            margin-top: 0px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(95, 111, 82);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(50, 124, 7);
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .daftar-item {
+            display: flex;
+            margin-top: 10px;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 700px;
+            margin-left: 250px;
+            background-color: rgb(169, 179, 136);
+        }
+
+
+        .daftar-item button {
+            margin: 45px;
+            display: flex;
+            background-color: rgb(95, 111, 82);
+
+
+        }
+
+        .tombol {
+            display: flex;
+            padding-left: 100px;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .semua {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .deskripsi {
+        margin-top: 20px;
+    }
+
+    #formPengajian {
+        margin-top: 20px;
+    }
+
+    .daftar-item {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .tombol {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .pict {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .gmbr {
+        width: 90%;
+    }
+
+    .semua {
+        margin-left: 0;
+    }
+
+    .deskripsi {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+
+    #formPengajian {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+
+    .daftar-item {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .tombol {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .pict {
+        display: none;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="gmbr">
+        <h2> Formulir Pendaftaraan Pengajian Kampung</h2>
+    </div>
+    <main>
+        <div class="semua">
+            <div class="pict">
+                <img src="p-removebg-preview.png">
+            </div>
+            <div class="deskripsi">
+                <p>Assalamu'alaikum warahmatullahi wabarakatuh,<br><br>
+                    FORMULIR PENDAFTARAN PENGAJIAN KAMPUNG UNTUK UMUM
+                    SEMUA KALANGAN. SILAHKAN DI ISI SESUAI DENGAN YANG TERTERA
+                    DISAMPING<br> <br> Wassalamu'alaikum warahmatullahi wabarakatuh.</p>
+            </div>
+
+            <form id="formPengajian">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama">
+
+                <label for="nomorWhatsApp">Nomor WhatsApp:</label>
+                <input type="number" id="nomorWhatsApp">
+
+                <label for="jk">Jenis Kelamin:</label>
+                <select id="jk" required>
+                    <option value="Pilih Jenis Kelamin" disabled selected>Pilih Jenis Kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+
+                <label for="kategori">Kategori:</label>
+                <select id="kategori" required>
+                    <option value="Kategori" disabled selected>Pilih Kategori</option>
+                    <option value="Remaja">Remaja</option>
+                    <option value="Anak-anak">Anak-anak</option>
+                    <option value="Dewasa">Dewasa</option>
+                </select>
+
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat">
+
+                <button type="submit" id="btnDaftar">Daftar</button>
+                <button type="button" id="btnCancel">Cancel</button>
+            </form>
+        </div>
+    </main>
+    <div id="daftarList"></div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const namaInput = document.getElementById("nama");
+            const nomorWhatsAppInput = document.getElementById("nomorWhatsApp");
+            const jkSelect = document.getElementById("jk");
+            const kategoriSelect = document.getElementById("kategori");
+            const alamatInput = document.getElementById("alamat");
+            const formPengajian = document.getElementById("formPengajian");
+            const daftarList = document.getElementById("daftarList");
+
+            // Mengambil data dari localStorage saat halaman dimuat
+            const storedData = JSON.parse(localStorage.getItem("daftarData")) || [];
+            const daftarData = storedData;
+
+
+            function DaftarList() {
+                daftarList.innerHTML = "";
+                // Menyimpan data ke localStorage setiap kali diupdate
+                localStorage.setItem("daftarData", JSON.stringify(daftarData));
+
+                daftarData.forEach(function (data, index) {
+                    const listItem = document.createElement("div");
+                    listItem.className = "daftar-item";
+                    listItem.innerHTML = `
+                    <div class="data">
+                        <span><b>Nama:</b> ${data.nama}</span>
+                        <span><b>Nomor WhatsApp:</b> ${data.nomorWhatsApp}</span>
+                        <span><b>Jenis Kelamin:</b> ${data.jenisKelamin}</span>
+                        <span><b>Kategori:</b> ${data.kategori}</span>
+                        <span><b>Alamat:</b> ${data.alamat}</span>
+                        </div>
+                        <div class="tombol">
+                        <button class="btn-edit" data-index="${index}">Edit</button>
+                        <button class="btn-delete" data-index="${index}">Delete</button>
+                        </div>
+                
+                    `;
+                    daftarList.appendChild(listItem);
+
+                    const btnEdit = listItem.querySelector(".btn-edit");
+                    btnEdit.addEventListener("click", function () {
+                        editData(index);
+                    });
+
+                    const btnDelete = listItem.querySelector(".btn-delete");
+                    btnDelete.addEventListener("click", function () {
+                        deleteData(index);
+                    });
+                });
+            }
+
+            function clearForm() {
+                namaInput.value = "";
+                nomorWhatsAppInput.value = "";
+                jkSelect.value = "";
+                kategoriSelect.value = "";
+                alamatInput.value = "";
+            }
+
+            function editData(index) {
+                const selectedData = daftarData[index];
+                // Menyimpan data yang ada dalam formulir sementara
+                const tempData = {
+                    nama: namaInput.value,
+                    nomorWhatsApp: parseInt(nomorWhatsAppInput.value),
+                    jenisKelamin: jkSelect.value,
+                    kategori: kategoriSelect.value,
+                    alamat: alamatInput.value,
+                };
+                daftarData.splice(index, 1);
+                // data bisa diedit setelah di isi
+                namaInput.value = selectedData.nama;
+                nomorWhatsAppInput.value = selectedData.nomorWhatsApp;
+                jkSelect.value = selectedData.jenisKelamin;
+                kategoriSelect.value = selectedData.kategori;
+                alamatInput.value = selectedData.alamat;
+
+                // Menyimpan data formulir sementara
+                namaInput.dataset.tempData = JSON.stringify(tempData);
+            }
+
+            function deleteData(index) {
+                daftarData.splice(index, 1);
+                DaftarList();
+
+            }
+
+            formPengajian.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const nama = namaInput.value;
+                const nomorWhatsApp = parseInt(nomorWhatsAppInput.value);
+                const jenisKelamin = jkSelect.value;
+                const kategori = kategoriSelect.value;
+                const alamat = alamatInput.value;
+
+                if (nama && !isNaN(nomorWhatsApp) && jenisKelamin && kategori && alamat) {
+                    const newData = {
+                        nama: nama,
+                        nomorWhatsApp: nomorWhatsApp,
+                        jenisKelamin: jenisKelamin,
+                        kategori: kategori,
+                        alamat: alamat,
+                    };
+
+                    daftarData.push(newData);
+                    DaftarList();
+                    clearForm();
+
+                } else {
+                    alert("Harap lengkapi semua data dengan benar sebelum mendaftar.");
+                }
+            });
+
+            document.getElementById("btnCancel").addEventListener("click", function () {
+                // Mengambil kembali data formulir sementara jika ada
+                const tempData = namaInput.dataset.tempData;
+                if (tempData) {
+                    const parsedTempData = JSON.parse(tempData);
+
+                    namaInput.value = parsedTempData.nama;
+                    nomorWhatsAppInput.value = parsedTempData.nomorWhatsApp;
+                    jkSelect.value = parsedTempData.jenisKelamin;
+                    kategoriSelect.value = parsedTempData.kategori;
+                    alamatInput.value = parsedTempData.alamat;
+
+                    // Menghapus data formulir sementara
+                    delete namaInput.dataset.tempData;
+                } else {
+                    clearForm();
+                }
+            });
+            DaftarList();
+        });
+    </script>
+
+</body>
+
+</html
